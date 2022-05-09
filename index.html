@@ -23,21 +23,23 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid g-0">
       <!-- Navbar -->
-      <div class="row">
-        <nav class="navbar navbar-light bg-white">
-          <div class="container-fluid">
-            <a class="navbar-brand">RideHire</a>
-
-            <form class="d-flex">
+      <nav class="navbar navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand">RideHire</a>
+          <form class="d-flex">
+            <div class="input-group">
               <img src="img/location-arrow.svg" alt="" />
               <input
-                class="form-control me-2"
+                class="form-control"
                 type="search"
                 placeholder="4620 North Braeswo..."
                 aria-label="Search"
               />
+            </div>
+
+            <div class="input-group">
               <img src="img/time.svg" alt="" />
               <input
                 class="form-control me-2"
@@ -45,6 +47,8 @@
                 placeholder="Jun 17, 10:30 am - 12:45 am"
                 aria-label="Search"
               />
+            </div>
+            <div class="input-group">
               <img src="img/riders.svg" alt="" />
               <input
                 class="form-control me-2"
@@ -52,23 +56,81 @@
                 placeholder="14-24"
                 aria-label="Search"
               />
+            </div>
 
-              <button
-                id="ridehire-search"
-                class="btn btn-success"
-                type="submit"
-              >
-                <img src="img/search.svg" alt="" />
-              </button>
-            </form>
-            <a href="#">List Your Vehicle</a>
-            <button class="btn btn-success">Signup/Login</button>
+            <a id="ridehire-search" class="btn btn-success">
+              <img src="img/search.svg" alt="" />
+            </a>
+          </form>
+
+          <a href="#">List Your Vehicle</a>
+          <button class="btn btn-success">Signup/Login</button>
+        </div>
+      </nav>
+
+      <!-- Price/ Filter/ Map               -->
+      <header>
+        <!-- Price Button -->
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Price
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+        <!-- Filter Button -->
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filters
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+        <!-- Map Toggle Button -->
+        <div class="btn-group">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Checked switch checkbox input</label
+            >
           </div>
-        </nav>
-      </div>
+        </div>
+      </header>
+
+      <!-- End of Container -->
     </div>
     <!-- Bootstrap JS -->
     <script src="bs/js/bootstrap.min.js"></script>
+    <script src="bs/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
