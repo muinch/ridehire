@@ -1,0 +1,28 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #003d41;
+}
+
+a {
+  text-decoration: none;
+  color: #003d41;
+}
+
+form {
+  border: 1px solid #ced4de;
+  border-radius: 50px;
+  padding: 0 10px;
+}
+
+.form-control {
+  border: none;
+}
+
+.form-control:focus {
+  border-radius: 50px;
+  border: none;
+}
+
+#ridehire-search {
+  border-radius: 50px;
+}
