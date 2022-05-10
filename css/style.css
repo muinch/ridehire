@@ -9,6 +9,7 @@ main {
   padding: 0 80px;
 }
 
+/* Nav */
 nav {
   height: 80px;
   background: #ffffff;
@@ -43,8 +44,20 @@ form {
   box-shadow: none;
 }
 
+/* Header */
 header {
   height: 60px;
   background: #ecf6f6;
   opacity: 0.8;
+}
+
+/* Carousel */
+
+/* Google Map */
+
+#map {
+  height: 600px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
