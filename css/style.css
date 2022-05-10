@@ -3,16 +3,20 @@ body {
   color: #003d41;
 }
 
-nav,
 header,
 main {
-  padding: 0 80px;
+  padding: 0 4%;
 }
 
-/* Nav */
-nav {
+/* Header */
+header {
   height: 80px;
   background: #ffffff;
+}
+
+.btn-success {
+  background: #00d47b;
+  border: none;
 }
 
 a {
@@ -37,6 +41,7 @@ form {
   border-radius: 20px;
   height: 40px;
   width: 40px;
+  margin: 0 -8px 0 4px;
 }
 
 .form-control:focus {
@@ -44,12 +49,16 @@ form {
   box-shadow: none;
 }
 
+#singup-login-button {
+  border-radius: 50px;
+}
+
 /* Header */
-header {
+/* header {
   height: 60px;
   background: #ecf6f6;
   opacity: 0.8;
-}
+} */
 
 /* Carousel */
 
@@ -60,4 +69,15 @@ header {
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+
+/* Main */
+
+/* main img {
+  width: 100%;
+  height: auto;
+} */
+
+.bi {
+  font-size: 1rem;
 }

@@ -13,11 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/5879ed8cc9.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bs/css/bootstrap.min.css" />
     <!-- Custom CSS -->
@@ -25,131 +25,217 @@
   </head>
   <body>
     <div class="container-fluid g-0">
-      <!-- Navbar -->
-      <nav class="navbar navbar-light bg-white">
-        <div class="container-fluid">
-          <a class="navbar-brand">RideHire</a>
-          <form class="d-flex">
-            <div class="input-group">
-              <img src="img/location-arrow.svg" alt="" />
-              <input
-                class="form-control"
-                type="search"
-                placeholder="4620 North Braeswo..."
-                aria-label="Search"
-              />
-            </div>
-
-            <div class="input-group">
-              <img src="img/time.svg" alt="" />
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Jun 17, 10:30 am - 12:45 am"
-                aria-label="Search"
-              />
-            </div>
-            <div class="input-group">
-              <img src="img/riders.svg" alt="" />
-              <input
-                class="form-control"
-                type="search"
-                placeholder="14-24"
-                aria-label="Search"
-              />
-            </div>
-
-            <a id="ridehire-search" class="btn btn-success">
-              <img src="img/search.svg" alt="" />
-            </a>
-          </form>
-
-          <a href="#">List Your Vehicle</a>
-          <button class="btn btn-success">Signup/Login</button>
-        </div>
-      </nav>
-
-      <!-- Price/ Filter/ Map               -->
       <header>
-        <!-- Price Button -->
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-secondary dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Price
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="navbar-brand fs-2 fw-bold">RideHire</a>
 
-        <!-- Filter Button -->
-        <div class="btn-group">
-          <button
-            type="button"
-            class="btn btn-secondary dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Filters
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </div>
+            <form class="d-flex" action="">
+              <div class="input-group">
+                <img src="img/location-arrow.svg" alt="" />
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="4620 North Braeswo..."
+                  aria-label="Search"
+                />
+              </div>
 
-        <!-- Map Toggle Button -->
-        <div class="btn-group">
-          <div class="form-check form-switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              role="switch"
-              id="flexSwitchCheckChecked"
-              checked
-            />
-            <label class="form-check-label" for="flexSwitchCheckChecked"
-              >map</label
+              <div class="input-group">
+                <img src="img/time.svg" alt="" />
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Jun 17, 10:30 am - 12:45 am"
+                  aria-label="Search"
+                />
+              </div>
+
+              <div class="input-group">
+                <img src="img/riders.svg" alt="" />
+                <input
+                  class="form-control w-25"
+                  type="search"
+                  placeholder="14-24"
+                  aria-label="Search"
+                />
+              </div>
+
+              <button
+                type="submit"
+                id="ridehire-search"
+                class="btn btn-success"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+
+            <a class="fs-5 fw-bold" href="#">List Your Vehicle</a>
+
+            <a
+              id="singup-login-button"
+              class="btn btn-success fs-5 fw-bold"
+              href="#"
+              ><img class="img-fluid" src="img/user-login.svg" alt="" />
+              Signup/Login</a
             >
           </div>
         </div>
       </header>
 
-      <!-- Vehicles Listings and Maps Section -->
       <main>
-        <div class="row">
-          <!-- Popular vehicles -->
-          <h5>Popular Vehicles For You</h5>
-          <div class="col-6">
-            <div class="d-flex">
-              <img src="img/party-buses.svg" alt="" />
-              <img src="img/party-buses.svg" alt="" />
-              <img src="img/party-buses.svg" alt="" />
-              <img src="img/party-buses.svg" alt="" />
-              <img src="img/party-buses.svg" alt="" />
+        <!-- Price/ Filter/ Map Section -->
+        <section>
+          <div class="row">
+            <div class="d-flex justify-content-between align-items-center">
+              <div id="price-filter">
+                <!-- Price Button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Price
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Filter Button -->
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-secondary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Filters
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Map Toggle Button -->
+              <div class="btn-group">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckChecked"
+                    >map</label
+                  >
+                </div>
+              </div>
             </div>
           </div>
-
-          <!-- Map Section -->
-          <div class="col-6">
-            <img id="map" class="img-fluid" src="img/map.svg" alt="" />
+        </section>
+        <!-- Popular vehicles Slider Indicator-->
+        <section>
+          <div class="row">
+            <div class="d-flex justify-content-between">
+              <h5>Popular Vehicles For You</h5>
+              <div>
+                <button class="btn btn-secondary rounded-circle">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="btn btn-secondary rounded-circle">
+                  <i class="bi bi-chevron-right"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <!-- Vehicles Listings and Maps Section -->
+        <section>
+          <div class="row">
+            <!-- Popular vehicles Lists -->
+            <div class="col col-sm-12 col-md-12 col-xl-6">
+              <div class="row">
+                <div class="col"><img src="img/party-buses.svg" alt="" /></div>
+                <div class="col"><img src="img/limo-vans.svg" alt="" /></div>
+                <div class="col"><img src="img/stretch-SUVs.svg" alt="" /></div>
+                <div class="col">
+                  <img src="img/stretch-limos.svg" alt="" />
+                </div>
+                <div class="col"><img src="img/party-buses.svg" alt="" /></div>
+              </div>
+
+              <!-- Result Found/ Booked Vehicles Row -->
+              <div class="row">
+                <div class="col">
+                  <div class="d-flex justify-content-between">
+                    <p>300+ Results found</p>
+
+                    <!-- Booked Vehicles Toggle Button -->
+                    <div class="btn-group">
+                      <p>Show booked vehicles</p>
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckChecked"
+                          checked
+                        />
+                        <label
+                          class="form-check-label"
+                          for="flexSwitchCheckChecked"
+                          >map</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vehicles Cards -->
+            </div>
+
+            <!-- Maps Area -->
+            <div class="col col-sm-12 col-md-12 col-xl-6">
+              <div class="row">
+                <div class="col">
+                  <img class="img-fluid" src="img/map.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <!-- End of Container -->
     </div>
+
     <!-- Bootstrap JS -->
     <script src="bs/js/bootstrap.min.js"></script>
     <script src="bs/js/bootstrap.bundle.min.js"></script>
