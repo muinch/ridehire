@@ -141,9 +141,22 @@ form {
 }
 
 /* Map Section */
+.map-highlight {
+  top: 5rem;
+  left: 5rem;
+}
 
 /* Results found Section */
-.hightlight {
+.highlight {
   color: #00d47b;
   font-weight: 600;
+}
+
+/* Card Carousel Caption */
+.carousel-caption p {
+  background: rgba(196, 196, 196, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(31px);
+  border-radius: 5px;
+  font-size: 13px;
 }
