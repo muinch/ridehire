@@ -1,0 +1,55 @@
+/* Global CSS */
+body {
+  color: #003d41;
+}
+
+header,
+section,
+main {
+  border: 0;
+  padding: 0 4%;
+}
+
+/* Header Section */
+header {
+  height: 80px;
+}
+.navbar-light .navbar-brand {
+  color: #003d41;
+}
+.form-control {
+  border: none;
+  border-radius: 50px;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+form {
+  background: #ffffff;
+  box-shadow: 0px 5px 50px rgba(4, 64, 63, 0.05);
+  border-radius: 50px;
+  padding: 5px 0;
+}
+
+.btn {
+  border-radius: 50px;
+}
+
+.btn-success {
+  background: #00d47b;
+  border: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #003d41;
+}
+c
+
+/* Price Range - Filtering Section */
+.price-filter-bg {
+  height: 60px;
+  background: #b9d3d3;
+}
